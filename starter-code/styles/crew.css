@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+  font-family: "Barlow condensed";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.logo {
+  padding: 0.5rem;
+  margin: 2rem;
+  display: flex;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+}
+.navigate {
+  width: 40%;
+  padding: 0 1.5rem;
+  background: rgba(120, 120, 120, 0.521);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigate a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 18px;
+    height: 80px;
+  }
+  a:hover {
+    border-bottom: solid white;
+  }
+.navigate > a > b {
+  margin-right: 0.55rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 5rem;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.one{
+  font-weight: 300;
+  font-size:  32px ;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin-bottom: 2rem;
+}
+.one>b{
+ padding-right: 1rem;
+  color: rgba(159, 169, 218, 0.292);
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.post{
+  font: 400 32px "Bellefair";
+  text-transform: uppercase;
+  color: rgba(173, 173, 196, 0.51);
+}
+.name{
+  font: 400 64px "Bellefair";
+   margin: 1rem 0;
+   text-transform: uppercase;
+}
+.bio{
+  font-weight: 300 ;
+  font-size: 24px;
+  color: #d0d6f9;
+}
+.img{
+  content: "";
+  border-bottom: 15px solid transparent;
+  border-radius: 15px; /* Optional: rounded corners */
+  z-index: -1; 
+}
+.dotes{
+  display: flex;
+  gap: 1.5rem;
+  width: 30%;
+  margin-top:8rem;
+}
+.dot{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(150, 150, 199, 0.392);
+  cursor: pointer;
+}
+.dot:hover{
+  background: white;;
+  transition: all 0.2s;
+}
+.navigator{
+  display: none;
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+   body{
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+   }
+   .navigate{
+    width: 80%;
+   }
+   .post{
+    font-size: 28px;
+   }
+   .name{
+    font-size: 54px;
+   }
+   .info{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+   }
+   .about{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   }
+   .bio{
+    text-align: center;
+   }
+   .dotes{
+    width: 100%;
+    justify-content: center;
+   }
+}
+.burger{
+  display: none;
+}
+
+@media screen and (max-width:767px){
+  body{
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    height: 100%;
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .navigate{
+    display: none;
+  }
+  .burger{
+    display: block;
+    margin-right: 1rem;
+  }
+  .container{
+    align-items: center;
+    margin: 1rem;
+  }
+  .one{
+    font-size:24px;
+  }
+  .post{
+    font-size: 24px;
+   }
+   .name{
+    font-size: 31px;
+   }
+   .info{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+   }
+   .about{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   }
+   .bio{
+    text-align: center;
+    font-size: 16px;
+   }
+   .dotes{
+    width: 100%;
+    justify-content: center;
+   }
+   .img>img{
+    width: 250px;
+   }
+
+   .cnavigate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    gap: 1.5rem;
+  }
+  .cnavigate>a{
+  color: white;
+  text-decoration: none;
+  }
+  .cnavigate>a:hover{
+    border-right: solid white 2px;
+    border-bottom: none;
+  }
+ /* Sidebar Styles */
+.navigator {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  height: 100%;
+  width: 60%;
+  background-color: #00000082;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;} 
+
+/* When open, slide the sidebar in */
+.open{
+  transform: translateX(0); 
+}
+
+
+
+}

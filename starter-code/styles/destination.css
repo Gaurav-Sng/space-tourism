@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+  font-family: "Barlow condensed";
+  transition: opacity 0.5s ease-in;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.logo {
+  padding: 0.5rem;
+  margin: 2rem;
+  display: flex;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+}
+.navigate {
+  width: 40%;
+  padding: 0 1.5rem;
+  background: rgba(120, 120, 120, 0.521);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigate a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 18px;
+    height: 80px;
+  }
+  a:hover {
+    border-bottom: solid white;
+  }
+.navigate > a > b {
+  margin-right: 0.55rem;
+}
+
+.destsec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+}
+.one{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+.one>b{
+color: #d6d9f983;
+}
+.destinations{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+    width: 100%;
+}
+.box{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+width: 400px;
+}
+.options{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 20px;
+    margin: 1.5rem 0;
+}
+.options{
+    height: 1.5rem;
+}
+.options>span{
+cursor:pointer;
+text-transform: uppercase;
+}
+.options>span:hover{
+ border-bottom: solid white;
+}
+.info>span{
+    font: 100px "Bellefair";
+    margin: 2rem  0;
+    text-transform: uppercase;
+}
+.statistics{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.distance>span{
+    font: 36px "Bellefair";
+   text-transform: uppercase;
+   margin-top: 1rem;
+}
+.estimatedtime>span{
+    font: 36px "Bellefair";
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.about{
+    font-weight: 300;
+    font-size:  20px;
+    color: #D6D9F9;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 20px;
+}
+.burger{
+  display: none;
+}
+@media  screen and (min-width:768px)and (max-width:1200px) {
+  body{
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+   }
+   .navigate{
+    width: 80%;
+   }
+  .destinations{
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    align-items: center;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .options{
+    width: 88%;
+    justify-content: space-around;
+  }
+  .about{
+    text-align: center;
+  }
+  hr{
+    width: 100%;
+  }
+  .statistics{
+    width: 100%;
+  }
+  .distance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .estimatedtime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.navigator{
+  display: none;
+}
+
+@media screen and (max-width:767px){
+  body{
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    height: 100%;
+  }
+  nav{
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .navigate{
+    display: none;
+  }
+  .burger{
+    display: block;
+    margin-right: 1rem;
+  }
+  .destsec{
+    align-items: center;
+  }
+  .one{
+    font-size: 28px;
+  }
+  .destinations{
+    flex-direction: column;
+    align-items: center;
+  }
+  .destinations>img{
+    width: 200px;
+  }
+  .box{
+    align-items: center;
+    width: 85%;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .options{
+    justify-content: space-around;
+  }
+  .info>.option{
+    font-size: 60px;
+  }
+  .about{
+    text-align: center;
+  }
+  hr{
+    width: 100%;
+  }
+  .statistics{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .distance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .estimatedtime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cnavigate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    gap: 1.5rem;
+  }
+  .cnavigate>a{
+  color: white;
+  text-decoration: none;
+  }
+  .cnavigate>a:hover{
+    border-right: solid white 2px;
+    border-bottom: none;
+  }
+ /* Sidebar Styles */
+.navigator {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  height: 100%;
+  width: 60%;
+  background-color: #00000082;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;} 
+
+/* When open, slide the sidebar in */
+.open{
+  transform: translateX(0); 
+}
+
+
+}

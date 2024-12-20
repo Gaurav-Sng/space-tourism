@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+  font-family: "Barlow condensed";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.logo {
+  padding: 0.5rem;
+  margin: 2rem;
+  display: flex;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+}
+.navigate {
+  width: 40%;
+  padding: 0 1.5rem;
+  background: rgba(120, 120, 120, 0.521);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigate a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 18px;
+    height: 80px;
+  }
+  a:hover {
+    border-bottom: solid white;
+    /* transition: body 0.5s ease-in; */
+  }
+.navigate > a > b {
+  margin-right: 0.55rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  padding: 5rem;
+}
+.one{
+    font-weight: 300;
+    font-size:  32px ;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 2rem;
+  }
+  .one>b{
+   padding-right: 1rem;
+    color: rgba(159, 169, 218, 0.292);
+  }
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  
+}
+.modification{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.count{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 24px;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-family: "Bellefair";
+    background: transparent;
+    border:solid rgba(142, 139, 163, 0.634) ;
+    text-align: center; 
+    cursor: pointer;
+}
+.circle:hover{
+  border-color: white;
+  transition: border 0.4s;
+}
+.circle>span{
+    position: relative;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+.info{
+    font-size: 20px;
+    font-weight: 400;
+    width: 70%;
+    color: rgba(205, 205, 219, 0.866);
+    
+}
+.terminology{
+    font: 100 32px "Bellefair";
+    text-transform: uppercase;
+    color: rgba(181, 181, 207, 0.562);
+    margin-bottom: 1.5rem;
+}
+.name{
+    font: 100 64px "Bellefair";
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.navigator{
+  display: none;
+}
+@media screen and (min-width:768px)and (max-width:1100px) {
+  body{
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+  }
+ 
+   .navigate{
+    width: 80%;
+   }
+  .box{
+    flex-wrap: wrap-reverse;
+  }
+  .count{
+    flex-direction: row;
+    margin:  0 2rem;
+  }
+  .modification{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content{
+    align-items: center;
+    margin-top:1rem ;
+  }
+  .info{
+    width: 100%;
+    text-align: center;
+
+  }
+
+}
+.burger{
+  display: none;
+}
+@media screen and (max-width:767px){
+  body{
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    height: 100%;
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .navigate{
+    display: none;
+  }
+  .burger{
+    display: block;
+    margin-right: 1rem;
+  }
+  .one{
+    font-size: 24px;
+  }
+  .container{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .box{
+    flex-wrap: wrap-reverse;
+    width: 100%;
+  }
+  .terminology{
+    font-size: 24px;
+  }
+  .name{
+    font-size: 33px;
+  }
+  .count{
+    flex-direction: row;
+    margin:  0 2rem;
+  }
+  .modification{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content{
+    align-items: center;
+    margin-top:1rem ;
+    width: 90%;
+  }
+  .info{
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .cnavigate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    gap: 1.5rem;
+  }
+  .cnavigate>a{
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  }
+  .cnavigate>a:hover{
+    border-right: solid white 2px;
+    border-bottom: none;
+  }
+ /* Sidebar Styles */
+.navigator {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  height: 100%;
+  width: 60%;
+  background-color: #00000082;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;} 
+
+/* When open, slide the sidebar in */
+.open{
+  transform: translateX(0); 
+}
+
+}
